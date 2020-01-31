@@ -18,8 +18,9 @@ class Formulaire extends React.Component {
         }
     }
     
-    handleSubmit = () =>{
-
+    handleSubmit = event => {
+        event.preventDefault();
+        console.log(event)
         const {nom, prenom, email, checked} = this.state
 
         if (checked === true){
